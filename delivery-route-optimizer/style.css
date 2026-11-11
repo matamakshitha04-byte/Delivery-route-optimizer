@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.location {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.location input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+.optimize {
+    background: #16803c;
+}
+
+.reset {
+    background: #b42318;
+}
+
+#route {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#distance,
+#time {
+    margin-top: 8px;
+    color: #444;
+}
+canvas {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+#distanceMatrix {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+#distanceMatrix table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#distanceMatrix th,
+#distanceMatrix td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+#distanceMatrix th {
+    font-weight: bold;
+    background: #f5f5f5;
+}
+
+#distanceMatrix td {
+    background: white;
+}

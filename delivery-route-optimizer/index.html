@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delivery Route Optimizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🚚 Delivery Route Optimizer</h1>
+
+        <p class="subtitle">
+            Find the shortest delivery route using TSP & Dynamic Programming
+        </p>
+
+        <div class="card">
+
+            <h2>📍 Delivery Locations</h2>
+
+            <div id="locations"></div>
+
+            <button onclick="addLocation()">
+                + Add Location
+            </button>
+
+            <button class="optimize" onclick="findOptimalRoute()">
+                🚀 Find Optimal Route
+            </button>
+
+            <button class="reset" onclick="resetProject()">
+                🔄 Reset
+            </button>
+
+        </div>
+
+        <div class="result card">
+
+            <h2>📊 Optimal Route</h2>
+
+            <p id="route">No route calculated yet.</p>
+
+            <p id="distance"></p>
+
+            <p id="time"></p>
+
+        </div>
+        <div class="card">
+
+    <h2>📊 Distance Matrix</h2>
+
+    <div id="distanceMatrix"></div>
+
+    </div>
+
+        <div class="visual card">
+
+            <h2>🗺️ Route Visualization</h2>
+
+            <canvas id="routeCanvas"></canvas>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
